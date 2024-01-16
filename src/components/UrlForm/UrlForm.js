@@ -19,16 +19,18 @@ function UrlForm({addUrl}) {
     <form>
       <input
         type="text"
+        className="input-field"
         placeholder="Title..."
         name="title"
         value={title}
         onChange={(e) => {
           setTitle(e.target.value);
         }}
-      />
+        />
 
       <input
         type="text"
+        className="input-field"
         placeholder="URL to Shorten..."
         name="urlToShorten"
         value={urlToShorten}
